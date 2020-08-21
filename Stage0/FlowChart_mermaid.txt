@@ -1,0 +1,32 @@
+graph TD
+	A[Player] -->|New| B(SignUp)
+  A[Player] -->|Existing| C(Login)
+  B --> D{Intial Screen}
+  C --> D{Initial Screen}
+  D -->|One| E{View Score}
+  D -->|Two| F[Start game]
+  D -->|Three| G{Edit User Details}
+  E -->H[Player 1 score]
+  E -->I[Player 2 score]
+  G --> J[change username]
+  G --> K[change password]
+  F --> L{Player 1 hits the ball}
+  L -->  |Yes| M[Increase player 1 score by 1]
+  L --> |No| N{Check Score in this Game}
+  N --> |Player 1 > Player 2| P[Player 1 won]
+  N --> |Player 2 > Player 1| Q[Player 2 Won]
+  L --> |Quits| N
+  M --> R{Player 2 hits the ball}
+  R --> |No| N
+  R --> |Yes| S[Increase player 2 score by 1]
+  R --> |Quits| N
+  S --> |Next Round|L
+  P --> T[Game Over]
+  Q --> T[Game Over]
+  T --> U{Play Again}
+  U --> |Yes|F
+  U --> |No|E
+  U --> |Quit Game| V[Quits the Game]
+
+
+					
