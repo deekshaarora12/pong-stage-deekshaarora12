@@ -10,12 +10,12 @@ Edit User Details
 ### Scenario: Change UserDetails
 
   Given username and email
-  the user is loggedin
+  the user is logged in
 
-  When the user enters newusername not equal to old one
-  after clicking change UserDetails
+  When the user enters new username not equal to old one
+  after clicking change User Details
 
-  Then the newusername is changed
+  Then the new username is changed
 
 ### Scenario: Change Password
 
