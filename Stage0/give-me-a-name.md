@@ -18,9 +18,9 @@ Edit User Details
 
 ### Scenario: Change Password
 
-  Given username,email and password, user is loggedin
+  Given username, email and password, user is loggedin
 
   When the user clicks on change password,
-  entern new password
+  enters new password
 
   Then the new password is verified through email
