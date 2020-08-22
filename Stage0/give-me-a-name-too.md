@@ -14,7 +14,7 @@ Verify that the player is new or existing
   When the user enters the details
 
   Then if the player is new it gets registered
-  else the player is alredy existing
+  else the player is already existing and needs to login
 
 ### Scenario: Verify the existing player credentials
 
