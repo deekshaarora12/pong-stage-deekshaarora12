@@ -1,4 +1,4 @@
-# Player Credentials Check
+# Check Player Credentials
 
 ## Feature
 
