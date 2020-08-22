@@ -1,4 +1,4 @@
-# -give-this-module-a-name
+# Player Credentials Check
 
 ## Feature
 
