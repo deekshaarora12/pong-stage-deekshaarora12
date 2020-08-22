@@ -3,15 +3,24 @@
 ## Feature
 
 What part of the game does this module deliver?
+Verify that the player is new or existing
 
 ## Acceptance Criteria
 
-### Scenario: -describe-a-scenario-of-this-module
+### Scenario: Verify the new player credentials
 
-  Given -give-initial-values-and-conditions
+  Given the player username,password and email
 
-  When -event-happens
+  When the user enters the details
 
-  Then -module-does-this
+  Then if the player is new it gets registered
+  else the player is alredy existing
 
-### -add-scenario-if-needed
+### Scenario: Verify the existing player credentials
+
+  Given the player username,password
+
+  When the user enters the details
+
+  Then if the player is existing it logins successfully
+  else the player needs to create an account
