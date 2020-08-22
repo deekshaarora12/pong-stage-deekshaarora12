@@ -7,7 +7,7 @@ Edit User Details
 
 ## Acceptance Criteria
 
-### Scenario: Change UserDetails
+### Scenario: Change User Details
 
   Given username and email
   the user is logged in
@@ -20,7 +20,7 @@ Edit User Details
 ### Scenario: Change Password
 
   Given username and email and password
-  user is loggedin
+  user is logged in
 
   When the user clicks on change password
   enters new password
